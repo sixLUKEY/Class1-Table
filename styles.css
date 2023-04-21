@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800;900&display=swap');
+
 header{
     margin-top: 50px;
     text-align: center;
@@ -7,8 +9,9 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
+    margin-bottom: 50px;
 }
-table{
+/* table{
     width: 60%;
     text-align: center;
     border-radius: 10px;
@@ -24,38 +27,53 @@ th{
     background-color: aqua;}
 td{
     border-radius: 999px;
-}
+} */
 body{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.heading{
-    text-decoration: underline;
-    font-weight: bold;
+* {
+    padding: 0;
 }
 
-.divider{
-    height: 100px;
+
+.mu21, .mo21, .fu21, .fo21{
+    transition: 0.3s;
 }
 
-.mu21{
-    background-color: gray;
-    overflow:visible;
+.mu21:hover{
+    background-color: rgb(89, 89, 89);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.282); 
 }
 
-.mo21{
+.mo21:hover{
     color: white;
     background-color: black;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.282); 
 }
 
-.fu21{
-    background-color: red;
+.fu21:hover{
+    background-color: rgb(225, 50, 50);
+    color: white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.282); 
 }
 
-.fo21{
-    background-color: pink;
-    color: black;
+.fo21:hover{
+    background-color: rgb(198, 50, 126);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.282); 
+}
+
+
+/* 
+.tableDiv{
+    border:solid 5px black;
+} */
+
+.m-f{
+    margin-top: 50px;
 }
 
 .males{
@@ -85,7 +103,126 @@ body{
 
 div{
     display: flex;
-    align-items: center;
     justify-content: center ;
 }   
 
+table {
+    border-collapse: collapse;
+    /* margin: 25px 0; */
+    font-size: 0.9em;
+    font-family: 'Roboto Slab', serif;
+    min-width: 400px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 700;
+  }
+ 
+  th{
+    background-color: #fffcfc;
+    color: #000000;
+    border: solid 5px black;
+    font-weight: bolder;
+  }
+ th, td {   
+    padding-top: 15px;
+    padding-bottom: 15px;
+   
+ }
+
+
+table, tr {
+    background-color: #ffffff;
+}
+
+
+td {
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.282);  
+    font-weight: bolder;
+    
+}
+
+.tableDiv{
+    display: flex;
+    align-items: baseline;
+    translate: -73px;
+}
+
+
+.mu21, .mo21, .fu21, .fo21{
+    transition: 0.3s;
+}
+
+.mu21:hover{
+    background-color: rgb(89, 89, 89);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 6px 6px 10px 0 rgba(255, 255, 255, 0.148), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.148);
+}
+
+.mo21:hover{
+    color: white;
+    background-color: black;
+    box-shadow: inset 6px 6px 10px 0 rgba(255, 255, 255, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.333);
+}
+
+
+.fu21:hover{
+    background-color: rgb(225, 50, 50);
+    color: white;
+    box-shadow: inset 6px 6px 10px 0 rgba(255, 255, 255, 0.2), inset -6px -6px 10px 0 rgba(0, 0, 0, 0.333);
+}
+
+.fo21:hover{
+    background-color: rgb(198, 50, 126);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 6px 6px 10px 0 rgba(255, 255, 255, 0.108), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.24);
+}
+
+.key{
+    translate: -50px;
+}
+
+.key-word{
+    font-weight: 900;
+    translate: -40px 10px;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+.key-list {
+    translate: 0 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+
+}
+
+li {  
+    list-style-type: none;
+  }
+
+.mu21l::before {content: "•"; color: rgb(89, 89, 89);
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+  font-size: xxx-large;
+  
+}
+
+.mo21l::before {content: "•";
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+  font-size: xxx-large;
+}
+
+.fu21l::before {content: "•"; color: rgb(225, 50, 50);
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+  font-size: xxx-large;}
+
+.fo21l::before {content: "•"; color: rgb(198, 50, 126);
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+  font-size: xxx-large;}
